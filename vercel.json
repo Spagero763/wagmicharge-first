@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "wagmicharge-backend/api/index.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "wagmicharge-backend/api/index.js" }
+  ]
+}
